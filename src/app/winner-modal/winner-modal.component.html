@@ -1,0 +1,15 @@
+<div class="modal-header bg-success text-white">
+    <h4 class="modal-title">🎉 ¡Ganador de la Rifa! 🎉</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Close click')"></button>
+  </div>
+  <div class="modal-body text-center">
+    <h1 class="text-success display-3">🎊 Felicidades 🎊</h1>
+    <p class="fs-4">El ganador es:</p>
+    <h2 class="fw-bold text-primary">{{ winnerName }}</h2>
+    <p class="fs-5">Email: {{ winnerEmail }}</p>
+    <img src="assets/trophy.png" alt="Trophy" class="img-fluid my-3" style="max-height: 150px;">
+  </div>
+  <div class="modal-footer justify-content-center">
+    <button type="button" class="btn btn-lg btn-success" (click)="modal.close('Ok click')">¡Cerrar!</button>
+  </div>
+  

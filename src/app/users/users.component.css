@@ -1,0 +1,697 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/background.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #0b0130;
+   
+}
+.custom-cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%; /* Makes the cursor circular */
+    pointer-events: none; /* Prevents interference with mouse events */
+    z-index: 10000; /* Ensures it is above other elements */
+    transform: translate(-50%, -50%); /* Center the circle at the cursor point */
+  }
+  
+.caja26{
+    
+    cursor: url(https://cdn-icons-png.flaticon.com/128/2662/2662839.png), pointer;
+  }
+  .mountains-of-christmas-regular {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #338537;
+  }
+  
+  .mountains-of-christmas-bold {
+    font-family: "Mountains of Christmas", serif;
+    font-weight: 700;
+    padding-top: 50px;
+    font-style: normal;
+    height: 35px;
+     color: #D95043; /* Color verde oscuro */
+      text-shadow: 
+        1px 1px 0 #D95043, 
+        -1px -1px 0 #D95043,
+        1px -1px 0 #D95043,
+        -1px 1px 0 #D95043,
+        0 5px 5px rgba(0, 0, 0, 0.2);
+        
+        
+  }
+  .candy-text {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00ff00;
+    text-transform: uppercase;
+    background: repeating-linear-gradient(
+      45deg,
+      #fff,
+      #fff 10px,
+      #00ff0d 10px,
+      #00ff0d 20px
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+  }
+  
+/* .p1{
+    font-size: 1.2rem;
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    color:lightgreen;
+} */
+
+.container {
+    
+    text-align: center;
+    padding: 40px;
+    
+}
+
+h1 {
+    color:#45a049;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+h2 {
+    color:#45a049;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+p {
+    line-height: 1em;
+    padding: 0;
+    font-size: 1.25rem;
+    /* margin: 20px 0; */
+    /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6); */
+    /* color:lightgreen; */
+}
+
+.cta {
+    margin: 40px 0;
+}
+
+.cta button {
+    background-color: #ff4d4d;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%;
+}
+
+.cta button:hover {
+    background-color: #e60000;
+}
+
+.form-section {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px 200px;
+    border-radius: 10px;
+    margin-top: 30px;
+    
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-section input,
+.form-section button {
+    background-color: #338537;
+    font-weight: bold;
+    width: 90%; /* Same width for both */
+    padding: 15px; /* Same padding for both */
+    margin: 10px auto; /* Centered and consistent margins */
+    border: none; /* Remove any border differences */
+    border-radius: 5px; /* Ensure consistent rounded corners */
+    font-size: 1rem; /* Same font size for alignment */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+.form-section input {
+    background-color: #fff;
+    color: #000;
+}
+
+.form-section button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%;
+}
+.tree{
+    
+    width:60%;
+}
+.form-section button:hover {
+    background-color: #45a049;
+    width: 90%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+.logo {
+    position: absolute; /* Position the image relative to the body */
+    top: 80px; /* Adjust the vertical positioning */
+    right: 50px; /* Adjust the horizontal positioning */
+    width: 150px; /* Set a smaller width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it stays on top of other elements */
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .file-upload-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type='file'] {
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.file-upload-container:after {
+    
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+}
+
+.upload-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #555;
+}
+
+.custom-dropdown {
+    position: relative;
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+}
+
+.filter-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.dropdown-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+}
+
+.dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    font-size:14px;
+    background-color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-no-results {
+    padding: 10px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.ticket-container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #45a049;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #f7f9fb, #e8f5e9);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  .ticket-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-header h2 {
+    color: #e63946;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ticket-logo {
+    width: 80px;
+    margin-top: 10px;
+  }
+  
+  .ticket-body p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #4caf50;
+  }
+  
+  .ticket-body p strong {
+    color: #e63946;
+  }
+  
+  .ticket-footer {
+    margin-top: 20px;
+    border-top: 2px dashed #ccc;
+    padding-top: 15px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .ticket-footer p {
+    margin: 5px 0;
+  }
+  
+  .ticket-footer p:first-child {
+    font-size: 1.1rem;
+    color: #45a049;
+    font-weight: bold;
+  }
+  .snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+@keyframes fall {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(100vh);
+    }
+}
+
+@keyframes diagonal-fall {
+    0% {
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.25;
+        transform: translate(10vw, 100vh);
+    }
+}
+
+.sort-section {
+    cursor: url('/madataxmas.png'), auto;
+    padding: 60px;
+    height: 380px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.sort-section button {
+    
+    width: 50%; /* Same width for both */
+    height: auto;
+    margin: 10px auto; /* Centered and consistent margins */
+    border: none; /* Remove any border differences */
+    border-radius: 5px; /* Ensure consistent rounded corners */
+    font-size: 3rem; /* Same font size for alignment */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+    color: white;
+    background-color: #4caf50;
+}
+.sort-section button:hover {
+    background-color: #45a049;
+    color: white;
+    
+}
+.sort-dropdown {
+    position: relative;
+    width: 50%;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+}
+
+.custom-alert {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: linear-gradient(135deg, #00a51b, #51ff00);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s;
+  }
+  
+  .custom-alert .alert-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-alert .alert-content .winner-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .custom-alert .alert-content .winner-email {
+    font-size: 1.2rem;
+  }
+  
+  .custom-alert .trophy-icon {
+    width: 250px;
+    height: auto;
+    margin-top: 1rem;
+    animation: bounce 1.5s infinite;
+    
+  }
+  .trophy-icon {
+    pointer-events: auto; /* Re-enables mouse events for the image */
+    cursor: pointer; /* Ensures the cursor changes to indicate it's clickable */
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%, -60%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+    to {
+      opacity: 0;
+      transform: translate(-50%, -40%);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .custom-alert2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background: linear-gradient(135deg, #ffee00, #51ff00);
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s;
+  }
+  .custom-alert2.non-clickable {
+    pointer-events: none;
+  }
+  .custom-alert.non-clickable {
+    pointer-events: none;
+  }
+  .custom-alert2 .alert-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-alert2 .alert-content .winner-name {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .custom-alert2 .alert-content .winner-email {
+    font-size: 1.2rem;
+  }
+  
+  .custom-alert2 .trophy-icon2 {
+    width: 250px;
+    height: auto;
+    margin-top: 1rem;
+    animation: bounce 1.5s infinite;
+   
+  }
+  
+/* General Container Styling */
+.prize-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: white;
+    overflow: hidden;
+  }
+  
+  /* Prize Box */
+  .prize-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
+  
+  /* Cover for Initial Reveal */
+  .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ff5722;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    transition: transform 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s;
+    backface-visibility: hidden;
+    
+    
+  }
+  
+  /* .cover:hover {
+    transform: rotateY(360deg);
+    opacity: 0;
+  } */
+  
+/* Prize Box */
+.prize-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: auto;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .prize-box.revealed {
+    animation: spinAndFade 4s ease-in-out forwards;
+  }
+  
+  /* Spinning and Fading Animation */
+  @keyframes spinAndFade {
+    0% {
+      transform: rotateY(0deg);
+      opacity: 1;
+    }
+    25% {
+      transform: rotateY(360deg);
+    }
+    50% {
+      transform: rotateY(720deg);
+    }
+    75% {
+      transform: rotateY(1080deg);
+    }
+    100% {
+      transform: rotateY(1080deg);
+      opacity: 1; /* Fades out after spinning */
+    }
+  }
+  
+  /* Prize Content */
+  .prize-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0.9); /* Slight shrink effect before fading in */
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+    
+  }
+  .prize-image{
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+  }
+  .prize-image2{
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .prize-box.revealed .prize-content {
+    opacity: 1;
+    transform: scale(1); /* Fades in and scales to normal size */
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #45a040;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    color: #ffcccc;
+    background: #316e2e;
+  }
+  
+  
+    
+  
+
+  
+

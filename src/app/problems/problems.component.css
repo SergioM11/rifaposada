@@ -1,0 +1,48 @@
+/* Table Container */
+.table-container {
+    margin: 10px auto;
+    max-width: 800px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table Styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #fffb00;
+    color: blakc;
+  }
+  
+  thead th {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody td {
+    padding: 12px;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  .prize-image2{
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+  }  

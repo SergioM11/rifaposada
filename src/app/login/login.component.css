@@ -1,0 +1,23 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  mat-card {
+    width: 350px;
+    margin-top: -60px; /* Ajusta según la necesidad */
+  }
+  
+  .login-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlR3hMw_3daUL3Uhr5Y3uJh_kMaYzyqQhhPA&s'); /* Cambiar por la imagen deseada */
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  .login-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }

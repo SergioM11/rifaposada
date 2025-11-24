@@ -1,0 +1,78 @@
+<div class="snow-container"></div>
+
+
+    <!-- <button (click)="sort(); openGift()">Sortear</button> -->
+
+<!-- <button (click)="showSuccess()">Show Success Alert</button> -->
+<button class="close-button" *ngIf="showWinnerAlert"(click)="hideWinnerAlert(); disableClick()">✖DESCARTAR✖</button>
+<div class="custom-alert non-clickable" [class.non-clickable]="isNonClickable" *ngIf="showWinnerAlert" (click)="hideWinnerAlert()"> 
+    
+    <div class="alert-content">
+        
+      <h2>🎉 ¡Ganador de la Rifa! 🎉</h2>
+      <p class="winner-name">🎊 {{ winnerName }} 🎊</p>
+      <!-- <p class="winner-email">{{ winner.email }}</p> -->
+      <img src="gifbox.gif" alt="Trophy" class="trophy-icon" (click)="sortPrize(); enableClick()">
+    </div>
+  </div>
+
+  <div class="custom-alert2 non-clickable"  [class.non-clickable]="isNonClickable" *ngIf="showPrizeAlert" (click)=" hidePrizeAlert()"> 
+    
+    <div class="alert-content">
+      <h2>🎉 ¡Ganador de la Rifa! 🎉</h2>
+      <p class="winner-name">🎊 {{ winnerName }} 🎊</p>
+      <h2 *ngIf="prizeRevealed">Regalo: {{ prizeName}}</h2>
+      <h2 *ngIf="prizeRevealed">Num. Regalo: {{ prizeNum}}</h2>
+      <!-- <p class="winner-email">{{ winner.email }}</p> -->
+      <div class="prize-container">
+        <div class="prize-box" [class.revealed]="prizeRevealed">
+          <div class="cover" *ngIf="!prizeRevealed">
+            <img src="Mistery.png" alt="Trophy" class="trophy-icon2" >
+          </div>
+          <div class="prize-content" *ngIf="prizeRevealed">
+            <img [src]="prizeImage" alt="Prize Image" class="prize-image" (click)="disableClick()">
+
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <img src="madataxmas.png" class="logo">
+<div class="container">
+    <!-- <button (click)="clearSortingUsers()">DELETE</button> -->
+
+    
+    <div id="sort-section" class="sort-section">
+        <h1 class="mountains-of-christmas-bold" style="margin-top: 2.25rem;">¡Gran Rifa Navideña Madata 2024!</h1>
+        <p class="mountains-of-christmas-bold candy-text">PARTICIPANTES RESTANTES: {{ sortingUsers.length }}
+            PREMIOS RESTANTES: {{ prizeList.length }}
+       </p>
+
+        <div class="sort-dropdown">
+            <video
+  #videoRef
+  *ngIf="showSort"
+  class="tree"
+  src="roullette.mp4"
+  autoplay
+  playsinline
+  muted
+  
+></video>
+
+            <img src="penguin.gif" *ngIf="hideSort" class="tree">
+        </div>
+    <button
+        type="button"
+        class="sort-section button mountains-of-christmas-bold " 
+        *ngIf="prizeList.length > 0"
+        [disabled]="isButtonDisabled"
+        (click)="toggleForm(); sort()"
+    >
+        Iniciar Sorteo
+    </button>
+    
+    </div>
+</div>
+

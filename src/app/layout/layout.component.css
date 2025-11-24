@@ -1,0 +1,72 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-container {
+    
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: left;
+    justify-content: left;
+  }
+  
+  .example-sidenav {
+    padding: 5px;
+   
+  }
+
+  .mat-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    transition: margin-left 0.3 ease;
+  }
+  
+  /* Efecto hover: resaltar el elemento cuando el cursor está sobre él */
+  .mat-list-item:hover {
+    background-color: rgb(21, 71, 236, .1);
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  /* Estilo para los iconos dentro de las opciones del menú */
+  mat-icon {
+    margin-right: 10px;
+  }
+  .user-info{
+    height: 100px;
+    -webkit-box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+
+  }
+  .shadow{
+    -webkit-box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+box-shadow: 1px 1px 9px -4px rgba(0,0,0,0.75);
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+
+  
+  .login-header-image {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlR3hMw_3daUL3Uhr5Y3uJh_kMaYzyqQhhPA&s'); /* Cambiar por la imagen deseada */
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+  .login-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }

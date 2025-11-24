@@ -1,0 +1,26 @@
+<div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Prize</th>
+          <th>Num</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let winner of winnersList">
+          <td>{{ winner.Name }}</td>
+          <td>{{ winner.Email }}</td>
+          <td>
+            
+            <img [src]="'/' + winner.Prize + '.png'" alt="{{ winner.Prize }}" class="prize-image2">
+
+          </td>
+          
+          <td>{{ winner.Num }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

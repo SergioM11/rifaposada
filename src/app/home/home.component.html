@@ -1,0 +1,62 @@
+<div class="snow-container"></div>
+<div class="file-upload-container">
+    <label for="fileUpload">
+        <span class="upload-icon">📂</span>
+    </label>
+    <input
+        type="file"
+        id="fileUpload"
+        (change)="onFileChange($event)"
+        accept=".xlsx"
+        style="font-size: 200px;"
+    />
+    <!-- <button (click)="sort(); openGift()">Sortear</button> -->
+</div>
+
+<div class="container">
+    <!-- <button (click)="clearSortingUsers()">DELETE</button> -->
+    <h1 class="mountains-of-christmas-bold" style="margin-top: 2.25rem;">¡Gran Rifa Navideña Madata 2024!</h1>
+    <p class="mountains-of-christmas-regular">🎁 🎄 Participa y gana increíbles premios esta navidad. 🎄 🎁</p>
+    <img src="madataxmas.png" class="logo">
+    <div id="form-section" class="form-section">
+       
+        <form>
+            <p *ngIf="users.length === 0">No users available</p>
+            <p *ngIf="users.length > 0">Participantes: {{ sortingUsers.length }}</p>
+
+            <div class="custom-dropdown">
+                <input
+                    type="text"
+                    placeholder="Ingresa tu correo electronico @madatait.com"
+                    [(ngModel)]="emailFilter"
+                    (input)="filterEmails()"
+                    name="emailFilter" 
+                    class="filter-input"
+                    autocomplete="off"
+                />
+                <div *ngIf="emailFilter != ''" class="dropdown-list" style="max-height: 40px;">
+                    <div style="font-size: 20px;"
+                        *ngFor="let user of filteredUsers"
+                        class="dropdown-item"
+                        (click)="selectEmail(user.email)"
+                    >
+                        {{ user.email }}
+                    </div>
+                    <div *ngIf="filteredUsers.length === 0" class="dropdown-no-results">
+                        No emails found
+                    </div>
+                </div>
+            </div>
+            <p *ngIf="selectedEmail!=''" style="font-weight: bold;">{{ selectedEmail }}</p>
+            <p *ngIf="selectedEmail!=''" style="font-weight: bold;">{{ selectedName }}</p>
+            <button
+        *ngIf="selectedEmail!=''"
+                type="button"
+                class="form-section button"
+                (click)="saveSelectedUser();"
+            >
+                Confirmar y participar
+            </button>
+        </form>
+    </div>
+</div>
